@@ -18,6 +18,7 @@
 		888418DC2487E09D005EACB6 /* NewPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888418DB2487E09D005EACB6 /* NewPlaceTableViewController.swift */; };
 		88B5C2F12488FF0800D7407A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B5C2F02488FF0800D7407A /* StorageManager.swift */; };
 		88E948D6248E068B00C15970 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E948D5248E068A00C15970 /* RatingControl.swift */; };
+		88E948D8248E531200C15970 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E948D7248E531200C15970 /* MapViewController.swift */; };
 		BDC1D74C12C5D68F096E618D /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABFE1342ED470DE1051BD8D /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		888418DB2487E09D005EACB6 /* NewPlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableViewController.swift; sourceTree = "<group>"; };
 		88B5C2F02488FF0800D7407A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		88E948D5248E068A00C15970 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		88E948D7248E531200C15970 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				88B5C2F02488FF0800D7407A /* StorageManager.swift */,
 				888418D5248781E7005EACB6 /* MainViewController.swift */,
 				888418DB2487E09D005EACB6 /* NewPlaceTableViewController.swift */,
+				88E948D7248E531200C15970 /* MapViewController.swift */,
 				888418D7248798BD005EACB6 /* CustomTableViewCell.swift */,
 				88E948D5248E068A00C15970 /* RatingControl.swift */,
 				888418D92487D2C4005EACB6 /* PlaceModel.swift */,
@@ -225,6 +228,7 @@
 				888418D6248781E7005EACB6 /* MainViewController.swift in Sources */,
 				888418C22487815A005EACB6 /* AppDelegate.swift in Sources */,
 				88B5C2F12488FF0800D7407A /* StorageManager.swift in Sources */,
+				88E948D8248E531200C15970 /* MapViewController.swift in Sources */,
 				88E948D6248E068B00C15970 /* RatingControl.swift in Sources */,
 				888418DA2487D2C4005EACB6 /* PlaceModel.swift in Sources */,
 				888418D8248798BD005EACB6 /* CustomTableViewCell.swift in Sources */,
