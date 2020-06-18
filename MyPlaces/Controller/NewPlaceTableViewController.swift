@@ -23,6 +23,9 @@ class NewPlaceTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let name = "Anastasia"
+        let age = 24
+        
         tableView.tableFooterView = UIView(frame: CGRect(x: 0,
                                                          y: 0,
                                                          width: tableView.frame.size.width,
@@ -74,17 +77,28 @@ class NewPlaceTableViewController: UITableViewController {
     //MARK: Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "showMap" else { return }
-        let mapVC = segue.destination as! MapViewController
-        mapVC.place = currentPlace
+        
+        guard
+            let identifier = segue.identifier,
+            let mapVC = segue.destination as? MapViewController
+            else {return}
+        
+        mapVC.incomeSegueIdentifier = identifier
+        mapVC.mapViewControllerDelegate = self
+        
+        if identifier == "showPlace" {
+            mapVC.place.name = placeNameTF.text!
+            mapVC.place.location = placeLocationTF.text
+            mapVC.place.type = placeTypeTF.text
+            mapVC.place.imageData = placeImage.image?.pngData()
+        }
+        
+        
     }
     
-    
-    
     public func savePlace() {
-
-        let image = imageIsChanged ? placeImage.image : #imageLiteral(resourceName: "imagePlaceholder")
         
+        let image = imageIsChanged ? placeImage.image : #imageLiteral(resourceName: "imagePlaceholder")
         let imageData = image?.pngData()
         
         let newPlace = Place(name: placeNameTF.text!,
@@ -185,4 +199,13 @@ extension UIAlertController {
             }
         }
     }
+}
+
+extension NewPlaceTableViewController: MapViewControllerDelegate {
+    
+    func getAddress(_ address: String?) {
+        placeLocationTF.text = address
+    }
+    
+    
 }
